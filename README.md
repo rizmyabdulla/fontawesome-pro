@@ -1,10 +1,10 @@
-# fontawesome-v6.4.0-pro
+# fontawesome-pro
 
-#### Font Awesome v6.4.0 Pro: Get Premium Icons for Free!
+#### Font Awesome Pro: Get Premium Icons for Free!
 
-Font Awesome v6.4.0 Pro offers an extensive collection of premium icons for free! Enhance your website's design and visual appeal with these amazing icons.
+Font Awesome Pro offers an extensive collection of premium icons for free! Enhance your website's design and visual appeal with these amazing icons.
 
-### How to use
+## Font Awesome v6.4.0 Pro
 
 Simply add the following CSS links to the <head> section of your HTML file:
 
@@ -27,6 +27,17 @@ Simply add the following CSS links to the <head> section of your HTML file:
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
+```
+
+## Font Awesome v5.15.4 Pro
+
+Simply add the following CSS links to the <head> section of your HTML file:
+
+```
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css"
     />
 ```
 
