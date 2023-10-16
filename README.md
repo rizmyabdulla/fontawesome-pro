@@ -4,6 +4,32 @@
 
 Font Awesome Pro offers an extensive collection of premium icons for free! Enhance your website's design and visual appeal with these amazing icons.
 
+## Font Awesome v6.4.2 Pro
+
+Simply add the following CSS links to the <head> section of your HTML file:
+
+```
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+      >
+```
+
 ## Font Awesome v6.4.0 Pro
 
 Simply add the following CSS links to the <head> section of your HTML file:
