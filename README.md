@@ -28,6 +28,10 @@ Simply add the following CSS links to the <head> section of your HTML file:
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
       >
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/duotone.css"
+      />
 ```
 
 ## Font Awesome v6.4.0 Pro
@@ -54,6 +58,11 @@ Simply add the following CSS links to the <head> section of your HTML file:
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/duotone.css"
+    />
 ```
 
 ## Font Awesome v5.15.4 Pro
@@ -65,6 +74,10 @@ Simply add the following CSS links to the <head> section of your HTML file:
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/duotone.css"
+      />
 ```
 
 ### Star this Repository
