@@ -1,6 +1,7 @@
-# fontawesome-pro
+<img src="https://img.fortawesome.com/1ce05b4b/open-graph-general.png"/>
 
-#### Font Awesome Pro: Get Premium Icons for Free!
+
+### Font Awesome Pro: Get Premium Icons for Free!
 
 Font Awesome Pro offers an extensive collection of premium icons for free! Enhance your website's design and visual appeal with these amazing icons.
 
