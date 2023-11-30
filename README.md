@@ -6,8 +6,9 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 
 <details>
   <summary>Font Awesome v6.5.0 Pro</summary>
-      
-Simply add the following CSS links to the <head> section of your HTML file:
+  
+  <br>
+  Simply add the following CSS links to the <head> section of your HTML file:
 
 ```
       <link
@@ -40,6 +41,7 @@ Simply add the following CSS links to the <head> section of your HTML file:
 <details>
   <summary>Font Awesome v6.4.2 Pro</summary>
   
+  <br>
   Simply add the following CSS links to the <head> section of your HTML file:
 
 ```
@@ -73,6 +75,7 @@ Simply add the following CSS links to the <head> section of your HTML file:
 <details>
   <summary>Font Awesome v6.4.0 Pro</summary>
   
+  <br>
  Simply add the following CSS links to the <head> section of your HTML file:
 
 ```
@@ -106,6 +109,7 @@ Simply add the following CSS links to the <head> section of your HTML file:
 <details>
   <summary>Font Awesome v5.15.4 Pro</summary>
   
+  <br>
   Simply add the following CSS links to the <head> section of your HTML file:
 
 ```
@@ -124,4 +128,4 @@ Simply add the following CSS links to the <head> section of your HTML file:
 
 If you find this resource helpful, please consider starring our repository to show your appreciation and support.
 
-With Font Awesome v6.4.0 Pro, you'll have access to a wide variety of high-quality icons to enhance your web projects. Enjoy the benefits of premium icons without any cost! Happy designing! 🚀
+With Font Awesome Pro, you'll have access to a wide variety of high-quality icons to enhance your web projects. Enjoy the benefits of premium icons without any cost! Happy designing! 🚀
