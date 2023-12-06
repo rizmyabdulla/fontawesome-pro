@@ -37,6 +37,10 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"
       />
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"
+      />
 ```
   
 </details>
@@ -70,6 +74,10 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
       <link
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.0/css/duotone.css"
+      />
+       <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/brands.css"
       />
 ```
   
@@ -105,6 +113,10 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.4.2/css/duotone.css"
       />
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/brands.css"
+      />
 ```
 
 </details>
@@ -139,6 +151,10 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.4.0/css/duotone.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/brands.css"
     />
 ```
 </details>
