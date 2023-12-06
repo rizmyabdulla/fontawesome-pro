@@ -1,12 +1,48 @@
 <img src="https://img.fortawesome.com/1ce05b4b/open-graph-general.png"/>
 
 
-### Font Awesome Pro: Get Premium Icons for Free!
+### Font Awesome Pro: Get Premium Icons for Free! 
 
-Font Awesome Pro offers an extensive collection of premium icons for free! Enhance your website's design and visual appeal with these amazing icons.
+Font Awesome Pro offers an extensive collection of premium icons for free! Enhance your website's design and visual appeal with these amazing icons 🌟
+
+Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 💖 to the Font Awesome team by acquiring their <a href="https://fontawesome.com/plans"> premium plan</a> 🚀.
 
 <details>
-  <summary>Font Awesome v6.5.0 Pro</summary>
+  <summary>Font Awesome v6.5.1 Pro 💫</summary>
+  
+  <br>
+  Simply add the following CSS links to the <head> section of your HTML file:
+
+```
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+      >
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"
+      />
+```
+  
+</details>
+
+<details>
+  <summary>Font Awesome v6.5.0 Pro 💫</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -40,7 +76,7 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 </details>
 
 <details>
-  <summary>Font Awesome v6.4.2 Pro</summary>
+  <summary>Font Awesome v6.4.2 Pro 💫</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -74,7 +110,7 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 </details>
 
 <details>
-  <summary>Font Awesome v6.4.0 Pro</summary>
+  <summary>Font Awesome v6.4.0 Pro 💫</summary>
   
   <br>
  Simply add the following CSS links to the <head> section of your HTML file:
@@ -108,7 +144,7 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 </details>
 
 <details>
-  <summary>Font Awesome v5.15.4 Pro</summary>
+  <summary>Font Awesome v5.15.4 Pro 💫</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
