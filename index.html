@@ -41,6 +41,46 @@
     <main id="icon-grid" class="icon-grid">
         <!-- Icons will be dynamically loaded here -->
     </main>
+    <div id="icon-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Customize Icon</h2>
+            <div class="modal-body">
+                <div class="icon-preview">
+                    <i id="modal-icon-preview"></i>
+                </div>
+                <div class="customization-controls">
+                    <div class="control-group">
+                        <label for="icon-color">Color:</label>
+                        <input type="color" id="icon-color" value="#000000">
+                    </div>
+                    <div class="control-group">
+                        <label for="icon-size">Size (px):</label>
+                        <input type="range" id="icon-size" min="16" max="256" value="64">
+                        <span id="icon-size-value">64px</span>
+                    </div>
+                    <div class="control-group">
+                        <label for="modal-style-select">Style:</label>
+                        <select id="modal-style-select">
+                            <option value="fa-solid">Solid</option>
+                            <option value="fa-regular">Regular</option>
+                            <option value="fa-light">Light</option>
+                            <option value="fa-duotone">Duotone</option>
+                            <option value="fa-brands">Brands</option>
+                            <option value="sharp-solid">Sharp Solid</option>
+                            <option value="sharp-regular">Sharp Regular</option>
+                            <option value="sharp-light">Sharp Light</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="generated-code">
+                    <label for="html-code">HTML & Inline CSS:</label>
+                    <textarea id="html-code" readonly></textarea>
+                    <button id="copy-code-button">Copy Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
