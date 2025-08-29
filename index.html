@@ -36,6 +36,9 @@
                 <option value="sharp-regular">Sharp Regular</option>
                 <option value="sharp-light">Sharp Light</option>
             </select>
+            <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
         </div>
     </header>
     <main id="icon-grid" class="icon-grid">
@@ -52,7 +55,7 @@
                 <div class="customization-controls">
                     <div class="control-group">
                         <label for="icon-color">Color:</label>
-                        <input type="color" id="icon-color" value="#000000">
+                        <input type="color" id="icon-color" value="#4a90e2">
                     </div>
                     <div class="control-group">
                         <label for="icon-size">Size (px):</label>
@@ -72,11 +75,52 @@
                             <option value="sharp-light">Sharp Light</option>
                         </select>
                     </div>
+                    <div class="control-group">
+                        <label for="rotation-select">Rotation:</label>
+                        <select id="rotation-select">
+                            <option value="">None</option>
+                            <option value="fa-rotate-90">90°</option>
+                            <option value="fa-rotate-180">180°</option>
+                            <option value="fa-rotate-270">270°</option>
+                            <option value="fa-flip-horizontal">Flip Horizontal</option>
+                            <option value="fa-flip-vertical">Flip Vertical</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="animation-select">Animation:</label>
+                        <select id="animation-select">
+                            <option value="">None</option>
+                            <option value="fa-spin">Spin</option>
+                            <option value="fa-pulse">Pulse</option>
+                            <option value="fa-bounce">Bounce</option>
+                            <option value="fa-shake">Shake</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="generated-code">
-                    <label for="html-code">HTML & Inline CSS:</label>
-                    <textarea id="html-code" readonly></textarea>
+                    <div class="code-tabs">
+                        <button class="tab-button active" data-tab="html">HTML</button>
+                        <button class="tab-button" data-tab="css">CSS</button>
+                        <button class="tab-button" data-tab="react">React</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="html-tab" class="tab-pane active">
+                            <label for="html-code">HTML & Inline CSS:</label>
+                            <textarea id="html-code" readonly></textarea>
+                        </div>
+                        <div id="css-tab" class="tab-pane">
+                            <label for="css-code">CSS Classes:</label>
+                            <textarea id="css-code" readonly></textarea>
+                        </div>
+                        <div id="react-tab" class="tab-pane">
+                            <label for="react-code">React Component:</label>
+                            <textarea id="react-code" readonly></textarea>
+                        </div>
+                    </div>
                     <button id="copy-code-button">Copy Code</button>
+                    <button id="favorite-button" class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i> Add to Favorites
+                    </button>
                 </div>
             </div>
         </div>
