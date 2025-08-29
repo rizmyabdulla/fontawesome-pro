@@ -88,18 +88,50 @@ h1 {
     transition: all 0.3s;
 }
 
-.theme-toggle:hover {
+.filter-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    transition: all 0.3s;
+    color: #666;
+}
+
+.filter-btn.active {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    color: white;
+}
+
+.filter-btn:hover, .theme-toggle:hover {
     background-color: #f0f0f0;
     transform: scale(1.1);
 }
 
+.filter-btn.active:hover {
+    background-color: #2c5282;
+}
+
+body.dark-mode .filter-btn, 
 body.dark-mode .theme-toggle {
     border-color: #555;
     color: #e0e0e0;
 }
 
+body.dark-mode .filter-btn:hover, 
 body.dark-mode .theme-toggle:hover {
     background-color: #404040;
+}
+
+body.dark-mode .filter-btn.active {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
 }
 
 #search-bar, #version-select, #style-select {
@@ -143,6 +175,32 @@ body.dark-mode .theme-toggle:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     position: relative;
     overflow: hidden;
+}
+
+.icon-card.favorited {
+    border-color: #e53e3e;
+}
+
+.icon-card.favorited .favorite-indicator {
+    opacity: 1;
+}
+
+.favorite-indicator {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #e53e3e;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon-card:hover .favorite-indicator {
+    opacity: 0.3;
+}
+
+.icon-card.favorited:hover .favorite-indicator {
+    opacity: 1;
 }
 
 .icon-card::before {

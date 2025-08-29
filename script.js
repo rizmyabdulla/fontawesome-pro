@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById('search-bar');
     const versionSelect = document.getElementById('version-select');
     const styleSelect = document.getElementById('style-select');
+    const favoritesFilter = document.getElementById('favorites-filter');
     const themeToggle = document.getElementById('theme-toggle');
 
     // Modal elements
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchTimeout;
     let favorites = JSON.parse(localStorage.getItem('fa-favorites') || '[]');
     let activeTab = 'html';
+    let showingFavorites = false;
 
     // Common FontAwesome icons as fallback
     const fallbackIcons = [
@@ -93,7 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         iconGrid.innerHTML = '';
         
         if (iconList.length === 0) {
-            iconGrid.innerHTML = '<div class="no-results"><i class="fa-solid fa-search"></i><p>No icons found matching your search.</p></div>';
+            const message = showingFavorites ? 'No favorite icons yet. Click the heart on any icon to add it to favorites!' : 'No icons found matching your search.';
+            iconGrid.innerHTML = `<div class="no-results"><i class="fa-solid fa-search"></i><p>${message}</p></div>`;
             return;
         }
 
@@ -102,19 +105,42 @@ document.addEventListener('DOMContentLoaded', () => {
         filteredByStyle.forEach(iconName => {
             const iconCard = document.createElement('div');
             iconCard.className = 'icon-card';
+            
+            // Add favorite indicator if icon is favorited
+            if (favorites.includes(iconName)) {
+                iconCard.classList.add('favorited');
+            }
 
             const iconElement = document.createElement('i');
             const selectedStyle = styleSelect.value === 'all' ? 'fa-solid' : styleSelect.value;
             iconElement.className = `${selectedStyle} fa-${iconName}`;
+            iconElement.setAttribute('aria-hidden', 'true');
 
             const iconNamePara = document.createElement('p');
             iconNamePara.textContent = iconName;
-            iconNamePara.title = iconName; // Add tooltip
+            iconNamePara.title = iconName;
+
+            // Add favorite indicator
+            const favoriteIndicator = document.createElement('div');
+            favoriteIndicator.className = 'favorite-indicator';
+            favoriteIndicator.innerHTML = '<i class="fa-solid fa-heart"></i>';
 
             iconCard.appendChild(iconElement);
             iconCard.appendChild(iconNamePara);
+            iconCard.appendChild(favoriteIndicator);
 
             iconCard.addEventListener('click', () => openModal(iconName));
+            iconCard.setAttribute('role', 'button');
+            iconCard.setAttribute('tabindex', '0');
+            iconCard.setAttribute('aria-label', `Customize ${iconName} icon`);
+            
+            // Keyboard navigation support
+            iconCard.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openModal(iconName);
+                }
+            });
 
             iconGrid.appendChild(iconCard);
         });
@@ -125,17 +151,37 @@ document.addEventListener('DOMContentLoaded', () => {
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => {
             const searchTerm = searchBar.value.toLowerCase();
-            if (!searchTerm) {
-                displayIcons(icons);
-                return;
+            let filteredIcons = showingFavorites ? favorites : icons;
+            
+            if (searchTerm) {
+                filteredIcons = filteredIcons.filter(icon => {
+                    const allNames = [icon, ...(aliases[icon] || [])];
+                    return allNames.some(name => name.toLowerCase().includes(searchTerm));
+                });
             }
             
-            const filteredIcons = icons.filter(icon => {
-                const allNames = [icon, ...(aliases[icon] || [])];
-                return allNames.some(name => name.toLowerCase().includes(searchTerm));
-            });
             displayIcons(filteredIcons);
         }, 300);
+    }
+
+    // Toggle favorites filter
+    function toggleFavoritesFilter() {
+        showingFavorites = !showingFavorites;
+        const icon = favoritesFilter.querySelector('i');
+        
+        if (showingFavorites) {
+            favoritesFilter.classList.add('active');
+            icon.className = 'fa-solid fa-heart';
+            favoritesFilter.title = 'Show all icons';
+            favoritesFilter.setAttribute('aria-label', 'Show all icons');
+        } else {
+            favoritesFilter.classList.remove('active');
+            icon.className = 'fa-regular fa-heart';
+            favoritesFilter.title = 'Show only favorites';
+            favoritesFilter.setAttribute('aria-label', 'Filter favorites');
+        }
+        
+        filterIcons();
     }
 
     // Theme toggle functionality
@@ -190,6 +236,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = favoriteButton.querySelector('i');
         icon.className = isFavorite ? 'fa-solid fa-heart' : 'fa-regular fa-heart';
         favoriteButton.innerHTML = `${icon.outerHTML} ${isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}`;
+        
+        // Update the grid if we're showing favorites and this icon was just unfavorited
+        if (showingFavorites && !isFavorite) {
+            filterIcons();
+        }
     }
 
     // Modal functions
@@ -327,6 +378,7 @@ export default MyIcon;`;
 
     // Main event listeners
     searchBar.addEventListener('input', filterIcons);
+    favoritesFilter.addEventListener('click', toggleFavoritesFilter);
     themeToggle.addEventListener('click', toggleTheme);
 
     // Initialize theme

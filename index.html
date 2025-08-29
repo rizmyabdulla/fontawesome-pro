@@ -16,8 +16,8 @@
     <header>
         <h1>Font Awesome Icons</h1>
         <div class="filters">
-            <input type="text" id="search-bar" placeholder="Search for icons...">
-            <select id="version-select">
+            <input type="text" id="search-bar" placeholder="Search for icons..." aria-label="Search for icons">
+            <select id="version-select" aria-label="Select FontAwesome version">
                 <option value="v6.7.2">v6.7.2</option>
                 <option value="v6.5.1">v6.5.1</option>
                 <option value="v6.5.0">v6.5.0</option>
@@ -25,7 +25,7 @@
                 <option value="v6.4.0">v6.4.0</option>
                 <option value="v5.15.4">v5.15.4</option>
             </select>
-            <select id="style-select">
+            <select id="style-select" aria-label="Filter by icon style">
                 <option value="all">All Styles</option>
                 <option value="fa-solid">Solid</option>
                 <option value="fa-regular">Regular</option>
@@ -36,7 +36,10 @@
                 <option value="sharp-regular">Sharp Regular</option>
                 <option value="sharp-light">Sharp Light</option>
             </select>
-            <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">
+            <button class="filter-btn" id="favorites-filter" title="Show only favorites" aria-label="Filter favorites">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle theme">
                 <i class="fa-solid fa-moon"></i>
             </button>
         </div>
