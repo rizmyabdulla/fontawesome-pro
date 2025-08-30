@@ -244,6 +244,37 @@ body.dark-mode .filter-btn.active {
     color: #666;
 }
 
+.load-more-card {
+    border: 2px dashed #4a90e2 !important;
+    background-color: #f8f9ff !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+}
+
+.load-more-card i {
+    color: #4a90e2 !important;
+    font-size: 2em;
+}
+
+.load-more-card p {
+    color: #4a90e2 !important;
+    font-weight: 600;
+    margin: 8px 0 4px 0;
+}
+
+.load-more-card small {
+    color: #666;
+    font-size: 0.8em;
+}
+
+.load-more-card:hover {
+    background-color: #e6f2ff !important;
+    border-color: #2c5282 !important;
+}
+
 /* Loading, Error, and No Results States */
 .loading-state, .error-state, .no-results {
     display: flex;
@@ -298,6 +329,76 @@ body.dark-mode .filter-btn.active {
     100% { transform: rotate(360deg); }
 }
 
+/* Icon fallback styles for when CDN is blocked */
+.icon-fallback {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: #4a90e2;
+    border-radius: 2px;
+    position: relative;
+}
+
+.icon-fallback::before {
+    content: attr(data-icon);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ensure icons display properly */
+[class^="fa-"], [class*=" fa-"] {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands";
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-brands {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}
+
+.fa-regular {
+    font-weight: 400;
+}
+
+.fa-light {
+    font-weight: 300;
+}
+
+/* Improved grid for more icons */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .icon-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 14px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .icon-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 12px;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -310,7 +411,21 @@ body.dark-mode .filter-btn.active {
     }
 
     .icon-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 12px;
+        padding: 15px;
+    }
+    
+    .icon-card {
+        padding: 15px 10px;
+    }
+    
+    .icon-card i {
+        font-size: 2em;
+    }
+    
+    .icon-card p {
+        font-size: 0.8em;
     }
 }
 
