@@ -32,18 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let favorites = JSON.parse(localStorage.getItem('fa-favorites') || '[]');
     let activeTab = 'html';
     let showingFavorites = false;
+    let iconExtractor = null;
+    let currentVersion = 'v6.7.2';
 
-    // Common FontAwesome icons as fallback
-    const fallbackIcons = [
-        'home', 'user', 'search', 'heart', 'star', 'settings', 'mail', 'phone', 'calendar', 'clock',
-        'bookmark', 'tag', 'folder', 'file', 'image', 'video', 'music', 'download', 'upload', 'share',
-        'edit', 'delete', 'save', 'print', 'copy', 'cut', 'paste', 'undo', 'redo', 'refresh',
-        'play', 'pause', 'stop', 'volume-up', 'volume-down', 'mute', 'microphone', 'camera', 'wifi', 'bluetooth',
-        'battery-full', 'signal', 'location', 'map', 'car', 'plane', 'train', 'bus', 'bicycle', 'walking',
-        'shopping-cart', 'credit-card', 'money', 'gift', 'trophy', 'medal', 'award', 'thumbs-up', 'thumbs-down', 'like',
-        'comment', 'message', 'chat', 'bell', 'notification', 'warning', 'info', 'question', 'check', 'times',
-        'plus', 'minus', 'arrow-up', 'arrow-down', 'arrow-left', 'arrow-right', 'chevron-up', 'chevron-down', 'chevron-left', 'chevron-right',
-        'github', 'facebook', 'twitter', 'instagram', 'linkedin', 'youtube', 'google', 'apple', 'microsoft', 'amazon'
+    // Minimal fallback icons in case CSS extraction fails completely
+    const emergencyFallback = [
+        'home', 'user', 'search', 'heart', 'star', 'settings', 'calendar', 'clock',
+        'bookmark', 'folder', 'file', 'image', 'download', 'upload', 'share', 'edit',
+        'play', 'pause', 'stop', 'check', 'times', 'plus', 'minus'
     ];
 
     // Show loading state
@@ -57,35 +53,49 @@ document.addEventListener('DOMContentLoaded', () => {
         iconGrid.innerHTML = `<div class="error-state"><i class="fa-solid fa-exclamation-triangle"></i><p>Error: ${message}</p><button onclick="loadIcons()" class="retry-button">Retry</button></div>`;
     }
 
-    // Load icons with fallback
-    function loadIcons() {
+    // Initialize icon extractor
+    function initializeIconExtractor() {
+        if (typeof FontAwesomeIconExtractor !== 'undefined') {
+            iconExtractor = new FontAwesomeIconExtractor();
+        } else {
+            console.error('FontAwesome Icon Extractor not loaded');
+        }
+    }
+
+    // Load icons dynamically from CSS
+    async function loadIcons(version = null, forceReload = false) {
+        if (!iconExtractor) {
+            initializeIconExtractor();
+        }
+
+        // Use current version if not specified
+        const targetVersion = version || currentVersion;
+        currentVersion = targetVersion;
+        
         showLoading();
         
-        // Try to fetch from FontAwesome API first
-        fetch('https://api.fontawesome.com/v1/icons?license=free&limit=100')
-            .then(response => {
-                if (!response.ok) throw new Error('FontAwesome API not available');
-                return response.json();
-            })
-            .then(data => {
-                if (data && data.icons) {
-                    icons = Object.keys(data.icons);
-                } else {
-                    throw new Error('Invalid API response');
-                }
-                isLoading = false;
-                displayIcons(icons);
-            })
-            .catch(error => {
-                console.warn('FontAwesome API failed, using fallback icons:', error);
-                // Use fallback icons
-                icons = fallbackIcons;
-                isLoading = false;
-                displayIcons(icons);
-            });
+        try {
+            // Extract icons from CSS files
+            const extractedIcons = await iconExtractor.fetchIconsFromVersion(targetVersion, ['all']);
+            
+            if (extractedIcons && extractedIcons.length > 0) {
+                icons = extractedIcons;
+                console.log(`Successfully loaded ${icons.length} icons from FontAwesome ${targetVersion}`);
+            } else {
+                throw new Error('No icons extracted from CSS');
+            }
+            
+        } catch (error) {
+            console.warn('CSS extraction failed, using emergency fallback:', error);
+            icons = emergencyFallback;
+        }
+        
+        isLoading = false;
+        displayIcons(icons);
     }
 
     // Initialize loading
+    initializeIconExtractor();
     loadIcons();
 
     // Function to display icons
@@ -384,7 +394,7 @@ export default MyIcon;`;
     // Initialize theme
     loadTheme();
 
-    versionSelect.addEventListener('change', () => {
+    versionSelect.addEventListener('change', async () => {
         const version = versionSelect.value;
         const cssLinks = {
             'v6.7.2': [
@@ -435,7 +445,7 @@ export default MyIcon;`;
 
         // Remove existing stylesheets
         document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
-            if (link.href.includes('fontawesome')) {
+            if (link.href.includes('fontawesome') || link.href.includes('site-assets.fontawesome.com')) {
                 link.remove();
             }
         });
@@ -449,8 +459,8 @@ export default MyIcon;`;
             head.appendChild(link);
         });
 
-        // Re-display icons with the new version
-        filterIcons();
+        // Reload icons for the new version
+        await loadIcons(version, true);
     });
 
     styleSelect.addEventListener('change', filterIcons);
