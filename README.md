@@ -20,6 +20,36 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 💖 to the Font Awesome team by acquiring their <a href="https://fontawesome.com/plans"> premium plan</a> 🚀.
 
 <details>
+  <summary>Font Awesome v7.1.0 Pro 💫</summary>
+  
+  <br>
+  Simply add the following CSS links to the <head> section of your HTML file:
+
+```
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+/>
+```
+</details>
+
+<details>
   <summary>Font Awesome v7.0.0 Pro 💫</summary>
   
   <br>
