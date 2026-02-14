@@ -20,11 +20,43 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 💖 to the Font Awesome team by acquiring their <a href="https://fontawesome.com/plans"> premium plan</a> 🚀.
 
 <details>
-   <summary>Font Awesome v7.2.0 Pro 💫</summary>
-   <br>
-   Simply add the following CSS links to the <head> section of your HTML file:
+ <summary>Font Awesome v7.2.0 Pro 💫</summary>
 
-   <b>
+  <br>
+  Simply add the following CSS links to the <head> section of your HTML file:
+
+  <br>
+
+  ```html
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/all.css"/>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-solid.css"/>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-regular.css"/>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-light.css"/>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/duotone.css"/>
+
+<!-- Additional Fontawesome Pro+ Icons for v7.2.0 -->
+
+ <!-- Sharp Duotone -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-duotone-solid.css"/>
+ <!-- Chisel -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/chisel-regular.css"/>
+ <!-- Etch -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/etch-solid.css"/>
+ <!-- Graphite -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/graphite-thin.css"/>
+ <!-- Jelly -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/jelly-regular.css"/>
+ <!-- Notdog -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/notdog-solid.css"/>
+ <!-- Slab -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/slab-regular.css"/>
+ <!-- Thumb Print -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/thumbprint-light.css"/>
+ <!-- Utility -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-semibold.css"/>
+ <!-- Whiteboard -->
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/whiteboard-semibold.css"/>
+  ```
 
 </details>
 
