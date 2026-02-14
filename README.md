@@ -20,6 +20,15 @@ Font Awesome Pro offers an extensive collection of premium icons for free! Enhan
 Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 💖 to the Font Awesome team by acquiring their <a href="https://fontawesome.com/plans"> premium plan</a> 🚀.
 
 <details>
+   <summary>Font Awesome v7.2.0 Pro 💫</summary>
+   <br>
+   Simply add the following CSS links to the <head> section of your HTML file:
+
+   <b>
+
+</details>
+
+<details>
   <summary>Font Awesome v7.1.0 Pro 💫</summary>
   
   <br>
