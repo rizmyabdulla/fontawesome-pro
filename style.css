@@ -34,6 +34,25 @@ body.dark-mode .modal-content {
     color: #e0e0e0;
 }
 
+body.dark-mode .alert {
+    background: linear-gradient(135deg, #2e3039 0%, #343847 100%);
+    color: #f4f4f4;
+    border-color: #4b5164;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .alert-copy p {
+    color: #c9d0dd;
+}
+
+body.dark-mode .alert-cta {
+    background: #4a90e2;
+}
+
+body.dark-mode .alert-cta:hover {
+    background: #2f78ce;
+}
+
 body.dark-mode #search-bar, 
 body.dark-mode #version-select, 
 body.dark-mode #style-select,
@@ -65,6 +84,61 @@ h1 {
     font-size: 1.8em;
     font-weight: 600;
     color: #2c3e50;
+}
+
+.alert {
+    max-width: 1400px;
+    margin: 18px auto 0;
+    padding: 0;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ffe68f 0%, #fed53b 60%, #f7c51f 100%);
+    color: #183052;
+    box-shadow: 0 10px 28px rgba(24, 48, 82, 0.2);
+    border: 1px solid rgba(24, 48, 82, 0.12);
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 18px 22px;
+}
+
+.alert-copy h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-copy p {
+    margin: 8px 0 0;
+    font-size: 0.95rem;
+    color: #223f63;
+}
+
+.alert-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border-radius: 10px;
+    background: #183052;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .01em;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alert-cta:hover {
+    background: #0f2746;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(15, 39, 70, 0.25);
 }
 
 .filters {
@@ -311,6 +385,20 @@ body.dark-mode .filter-btn.active {
 
     .icon-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .alert {
+        margin: 14px 14px 0;
+    }
+
+    .alert-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .alert-cta {
+        width: 100%;
+        justify-content: center;
     }
 }
 

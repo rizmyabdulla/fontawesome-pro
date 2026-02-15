@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon Browser</title>
+
+    <link id="faBaseCss" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <a class="site-brand" href="#">
+                <i id="brandIcon" class="fa-solid fa-cube"></i>
+                <span>Font Awesome Icons</span>
+            </a>
+
+            <div class="search-row">
+                <input class="search-input" id="search" placeholder="Search icons..." />
+
+                <div class="filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn" disabled>Pro</button>
+                    <button class="filter-btn" disabled>Pro+</button>
+                </div>
+
+                <button id="favoritesOnlyBtn" class="favorites-only-btn" type="button" aria-label="Show only favorites"
+                    title="Show only favorites">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Favorites</span>
+                </button>
+
+                <select id="versionSelect">
+                    <option value="7.2.0" selected>7.2.0</option>
+                    <option value="7.1.0">7.1.0</option>
+                    <option value="7.0.0">7.0.0</option>
+                    <option value="6.7.2">6.7.2</option>
+                    <option value="6.5.1">6.5.1</option>
+                    <option value="5.15.4">5.15.4</option>
+                    <option value="brands">Brands</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <section class="sidebar-section">
+                <h4 class="section-title">LINKS</h4>
+                <div class="sidebar-links">
+                    <a id="iconLibraryLink" class="sidebar-link" href="index.html" rel="noopener noreferrer">
+                        <i class="fa-solid fa-font-awesome-logo-full"></i>
+                        <span>Icon Library</span>
+                    </a>
+                    <a id="repoLink" class="sidebar-link" href="https://github.com/rizmyabdulla/fontawesome-pro"
+                        target="_blank" rel="noopener noreferrer">
+                        <i id="repoIcon" class="fa-brands fa-github"></i>
+                        <span>GitHub Repository</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <div class="content">
+            <div class="alert" role="region" aria-label="New release announcement">
+                <div class="alert-content">
+                    <div class="alert-copy">
+                        <h2><i class="fa-solid fa-heart"></i> If you can afford it, support Font Awesome!</h2>
+                        <p>If you can afford the Font Awesome Pro plan, kindly show your support 💖 to the Font Awesome
+                            team by acquiring their premium plan 🚀.</p>
+                    </div>
+                    <a class="alert-cta" href="https://fontawesome.com/plans?discount=GRAPHITE20" target="_blank">
+                        View Fontawesome Plans
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <h2>Font Awesome CDNs</h2>
+                <p>
+                    Below is several different versions of Font-Awesome, just use which ever you require and drop it into your <code>&lt;head&gt;...&lt;/head&gt;</code>
+                </p>
+                <div id="cdnAccordionRoot"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        (async function renderCdnAccordion() {
+            const root = document.getElementById("cdnAccordionRoot");
+            if (!root) return;
+
+            const style = document.createElement("style");
+            style.textContent = `
+                #cdnAccordionRoot {
+                    display: grid;
+                    gap: 12px;
+                    padding: 10px 0 24px;
+                }
+                .cdn-toolbar {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 12px;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 12px;
+                    background: #ffffff;
+                }
+                .cdn-toolbar-meta {
+                    color: #475569;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+                .cdn-toolbar-actions {
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                }
+                .cdn-btn {
+                    border: 1px solid #d1d5db;
+                    background: #ffffff;
+                    color: #0f172a;
+                    border-radius: 9px;
+                    padding: 8px 12px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                .cdn-btn:hover {
+                    background: #f8fafc;
+                    border-color: #94a3b8;
+                }
+                .cdn-btn:disabled {
+                    opacity: 0.7;
+                    cursor: not-allowed;
+                }
+                .cdn-btn.primary {
+                    background: #1d4ed8;
+                    color: #ffffff;
+                    border-color: #1d4ed8;
+                }
+                .cdn-btn.primary:hover {
+                    background: #1e40af;
+                    border-color: #1e40af;
+                }
+                .cdn-accordion-item {
+                    border: 1px solid #e5e7eb;
+                    border-radius: 12px;
+                    background: #ffffff;
+                    overflow: hidden;
+                }
+                .cdn-accordion-item summary {
+                    list-style: none;
+                    cursor: pointer;
+                    padding: 12px 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                    font-weight: 600;
+                    color: #0f172a;
+                    background: #ffffff;
+                }
+                .cdn-accordion-item summary::-webkit-details-marker {
+                    display: none;
+                }
+                .cdn-summary-label {
+                    min-width: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .cdn-summary-count {
+                    color: #64748b;
+                    font-size: 12px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                }
+                .cdn-links-wrap {
+                    padding: 0 14px 14px;
+                    display: grid;
+                    gap: 8px;
+                    border-top: 1px solid #f1f5f9;
+                }
+                .cdn-link-row {
+                    display: grid;
+                    grid-template-columns: minmax(0, 1fr) auto;
+                    gap: 8px;
+                    align-items: center;
+                    padding: 8px;
+                    margin-top: 8px;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 10px;
+                    background: #f8fafc;
+                }
+                .cdn-url {
+                    min-width: 0;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    font-size: 12px;
+                    color: #0f172a;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .cdn-row-actions {
+                    display: inline-flex;
+                    gap: 6px;
+                }
+                .cdn-state {
+                    padding: 12px;
+                    border-radius: 12px;
+                    border: 1px solid #e5e7eb;
+                    background: #ffffff;
+                    color: #475569;
+                }
+                .cdn-state.error {
+                    border-color: #fecaca;
+                    background: #fff1f2;
+                    color: #991b1b;
+                }
+                .cdn-group-toolbar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 8px;
+                    margin-top: 8px;
+                    margin-bottom: 2px;
+                }
+            `;
+            document.head.appendChild(style);
+
+            const copyText = async (value, button) => {
+                const original = button.textContent;
+                try {
+                    await navigator.clipboard.writeText(value);
+                    button.textContent = "Copied";
+                } catch (error) {
+                    const area = document.createElement("textarea");
+                    area.value = value;
+                    document.body.appendChild(area);
+                    area.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(area);
+                    button.textContent = "Copied";
+                }
+                button.disabled = true;
+                setTimeout(() => {
+                    button.textContent = original;
+                    button.disabled = false;
+                }, 1100);
+            };
+
+            const toHtmlLink = (url) => `<link rel="stylesheet" href="${url}" />`;
+
+            const renderError = (message) => {
+                root.innerHTML = "";
+                const state = document.createElement("div");
+                state.className = "cdn-state error";
+                state.textContent = message;
+                root.appendChild(state);
+            };
+
+            let groups = [];
+            try {
+                const response = await fetch("data/cdns.json");
+                if (!response.ok) {
+                    throw new Error(`Unable to load CDN list (${response.status}).`);
+                }
+                const json = await response.json();
+                if (!Array.isArray(json)) {
+                    throw new Error("CDN data format is invalid.");
+                }
+                groups = json
+                    .filter(group => group && typeof group.name === "string" && Array.isArray(group.content))
+                    .map(group => ({
+                        name: group.name,
+                        links: group.content.filter(link => typeof link === "string" && link.length > 0)
+                    }))
+                    .filter(group => group.links.length > 0);
+            } catch (error) {
+                renderError(error.message || "Unable to load CDN list.");
+                return;
+            }
+
+            if (!groups.length) {
+                const state = document.createElement("div");
+                state.className = "cdn-state";
+                state.textContent = "No CDN entries available.";
+                root.appendChild(state);
+                return;
+            }
+
+            const summaryToolbar = document.createElement("div");
+            summaryToolbar.className = "cdn-toolbar";
+
+            const summaryMeta = document.createElement("div");
+            summaryMeta.className = "cdn-toolbar-meta";
+            summaryMeta.textContent = `${groups.length} versions loaded`;
+
+            summaryToolbar.appendChild(summaryMeta);
+            root.appendChild(summaryToolbar);
+
+            groups.forEach((group) => {
+                const details = document.createElement("details");
+                details.className = "cdn-accordion-item";
+
+                const summary = document.createElement("summary");
+
+                const summaryLabel = document.createElement("span");
+                summaryLabel.className = "cdn-summary-label";
+                summaryLabel.textContent = group.name;
+
+                const summaryCount = document.createElement("span");
+                summaryCount.className = "cdn-summary-count";
+                summaryCount.textContent = `${group.links.length} links`;
+
+                summary.appendChild(summaryLabel);
+                summary.appendChild(summaryCount);
+                details.appendChild(summary);
+
+                const wrap = document.createElement("div");
+                wrap.className = "cdn-links-wrap";
+                const groupLinks = group.links;
+                const groupHtml = groupLinks.map(toHtmlLink).join("\n");
+
+                const groupToolbar = document.createElement("div");
+                groupToolbar.className = "cdn-group-toolbar";
+
+                const copyGroupLinksBtn = document.createElement("button");
+                copyGroupLinksBtn.type = "button";
+                copyGroupLinksBtn.className = "cdn-btn";
+                copyGroupLinksBtn.textContent = "Copy All";
+                copyGroupLinksBtn.addEventListener("click", () => copyText(groupLinks.join("\n"), copyGroupLinksBtn));
+
+                const copyGroupHtmlBtn = document.createElement("button");
+                copyGroupHtmlBtn.type = "button";
+                copyGroupHtmlBtn.className = "cdn-btn primary";
+                copyGroupHtmlBtn.textContent = "Copy All HTML";
+                copyGroupHtmlBtn.addEventListener("click", () => copyText(groupHtml, copyGroupHtmlBtn));
+
+                groupToolbar.appendChild(copyGroupLinksBtn);
+                groupToolbar.appendChild(copyGroupHtmlBtn);
+                wrap.appendChild(groupToolbar);
+
+                group.links.forEach(link => {
+                    const row = document.createElement("div");
+                    row.className = "cdn-link-row";
+
+                    const url = document.createElement("code");
+                    url.className = "cdn-url";
+                    url.title = link;
+                    url.textContent = link;
+
+                    const actions = document.createElement("div");
+                    actions.className = "cdn-row-actions";
+
+                    const copyLinkBtn = document.createElement("button");
+                    copyLinkBtn.type = "button";
+                    copyLinkBtn.className = "cdn-btn";
+                    copyLinkBtn.textContent = "Copy Link";
+                    copyLinkBtn.addEventListener("click", () => copyText(link, copyLinkBtn));
+
+                    const copyHtmlBtn = document.createElement("button");
+                    copyHtmlBtn.type = "button";
+                    copyHtmlBtn.className = "cdn-btn";
+                    copyHtmlBtn.textContent = "Copy HTML";
+                    copyHtmlBtn.addEventListener("click", () => copyText(toHtmlLink(link), copyHtmlBtn));
+
+                    actions.appendChild(copyLinkBtn);
+                    actions.appendChild(copyHtmlBtn);
+                    row.appendChild(url);
+                    row.appendChild(actions);
+                    wrap.appendChild(row);
+                });
+
+                details.appendChild(wrap);
+                root.appendChild(details);
+            });
+        })();
+    </script>
+</body>
+
+</html>
