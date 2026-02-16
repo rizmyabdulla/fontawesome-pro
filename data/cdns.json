@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Font Awesome v7.2.0 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/duotone.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-duotone-solid.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/chisel-regular.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/etch-solid.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/graphite-thin.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/jelly-regular.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/notdog-solid.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/slab-regular.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/thumbprint-light.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-semibold.css",
+      "https://site-assets.fontawesome.com/releases/v7.2.0/css/whiteboard-semibold.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v7.1.0 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v7.0.0 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v7.0.0/css/duotone.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v6.7.2 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css",
+      "https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v6.5.1 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v6.5.0 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.0/css/duotone.css",
+      "https://site-assets.fontawesome.com/releases/v6.5.0/css/brands.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v6.4.2 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.2/css/duotone.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.2/css/brands.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v6.4.0 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.0/css/duotone.css",
+      "https://site-assets.fontawesome.com/releases/v6.4.0/css/brands.css"
+    ]
+  },
+  {
+    "name": "Font Awesome v5.15.4 Pro 💫",
+    "content": [
+      "https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css",
+      "https://site-assets.fontawesome.com/releases/v5.15.4/css/duotone.css"
+    ]
+  }
+]

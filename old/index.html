@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Awesome Icon Library</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Font Awesome Icons</h1>
+        <div class="filters">
+            <input type="text" id="search-bar" placeholder="Search for icons..." aria-label="Search for icons">
+            <select id="version-select" aria-label="Select FontAwesome version">
+                <option value="v6.7.2">v6.7.2</option>
+                <option value="v6.5.1">v6.5.1</option>
+                <option value="v6.5.0">v6.5.0</option>
+                <option value="v6.4.2">v6.4.2</option>
+                <option value="v6.4.0">v6.4.0</option>
+                <option value="v5.15.4">v5.15.4</option>
+            </select>
+            <select id="style-select" aria-label="Filter by icon style">
+                <option value="all">All Styles</option>
+                <option value="fa-solid">Solid</option>
+                <option value="fa-regular">Regular</option>
+                <option value="fa-light">Light</option>
+                <option value="fa-duotone">Duotone</option>
+                <option value="fa-brands">Brands</option>
+                <option value="sharp-solid">Sharp Solid</option>
+                <option value="sharp-regular">Sharp Regular</option>
+                <option value="sharp-light">Sharp Light</option>
+            </select>
+            <button class="filter-btn" id="favorites-filter" title="Show only favorites" aria-label="Filter favorites">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    <div class="alert" role="region" aria-label="New release announcement">
+        <div class="alert-content">
+            <div class="alert-copy">
+            <h2><i class="fa-solid fa-star"></i> Updated Version Available</h2>
+            <p>A new version of the Font Awesome Icons is now available with new and updated features + latest versions of Font Awesome.</p>
+            </div>
+            <a class="alert-cta" href="../index.html">
+            Check it out
+            <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <main id="icon-grid" class="icon-grid">
+        <!-- Icons will be dynamically loaded here -->
+    </main>
+    <div id="icon-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Customize Icon</h2>
+            <div class="modal-body">
+                <div class="icon-preview">
+                    <i id="modal-icon-preview"></i>
+                </div>
+                <div class="customization-controls">
+                    <div class="control-group">
+                        <label for="icon-color">Color:</label>
+                        <input type="color" id="icon-color" value="#4a90e2">
+                    </div>
+                    <div class="control-group">
+                        <label for="icon-size">Size (px):</label>
+                        <input type="range" id="icon-size" min="16" max="256" value="64">
+                        <span id="icon-size-value">64px</span>
+                    </div>
+                    <div class="control-group">
+                        <label for="modal-style-select">Style:</label>
+                        <select id="modal-style-select">
+                            <option value="fa-solid">Solid</option>
+                            <option value="fa-regular">Regular</option>
+                            <option value="fa-light">Light</option>
+                            <option value="fa-duotone">Duotone</option>
+                            <option value="fa-brands">Brands</option>
+                            <option value="sharp-solid">Sharp Solid</option>
+                            <option value="sharp-regular">Sharp Regular</option>
+                            <option value="sharp-light">Sharp Light</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="rotation-select">Rotation:</label>
+                        <select id="rotation-select">
+                            <option value="">None</option>
+                            <option value="fa-rotate-90">90°</option>
+                            <option value="fa-rotate-180">180°</option>
+                            <option value="fa-rotate-270">270°</option>
+                            <option value="fa-flip-horizontal">Flip Horizontal</option>
+                            <option value="fa-flip-vertical">Flip Vertical</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="animation-select">Animation:</label>
+                        <select id="animation-select">
+                            <option value="">None</option>
+                            <option value="fa-spin">Spin</option>
+                            <option value="fa-pulse">Pulse</option>
+                            <option value="fa-bounce">Bounce</option>
+                            <option value="fa-shake">Shake</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="generated-code">
+                    <div class="code-tabs">
+                        <button class="tab-button active" data-tab="html">HTML</button>
+                        <button class="tab-button" data-tab="css">CSS</button>
+                        <button class="tab-button" data-tab="react">React</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="html-tab" class="tab-pane active">
+                            <label for="html-code">HTML & Inline CSS:</label>
+                            <textarea id="html-code" readonly></textarea>
+                        </div>
+                        <div id="css-tab" class="tab-pane">
+                            <label for="css-code">CSS Classes:</label>
+                            <textarea id="css-code" readonly></textarea>
+                        </div>
+                        <div id="react-tab" class="tab-pane">
+                            <label for="react-code">React Component:</label>
+                            <textarea id="react-code" readonly></textarea>
+                        </div>
+                    </div>
+                    <button id="copy-code-button">Copy Code</button>
+                    <button id="favorite-button" class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i> Add to Favorites
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="icon-data.js"></script>
+    <script src="icon-extractor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
