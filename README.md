@@ -1,10 +1,7 @@
-### Font Awesome Pro: Get Premium Icons for Free!
+# Font Awesome Pro: Get Premium Icons for Free!
+## 🌐 Check out the icon library here: [free-icons.xyz](https://free-icons.xyz/)
 
 <img src="https://img.fortawesome.com/1ce05b4b/open-graph-general.png"/>
-
-### Icon Library 🌐
-
-Check out the icon library here: [free-icons.xyz](https://free-icons.xyz/)
 
 ### Contributing 🤝
 
