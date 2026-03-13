@@ -338,7 +338,7 @@ function updateVersionStyles(versionKey) {
     return;
   }
 
-  faBaseCss.href = `${config.cssBaseUrl}all.css`;
+  faBaseCss.href = `${config.cssBaseUrl}fontawesome.css`;
   clearDynamicStyles();
 
   const cssFiles = new Set();
