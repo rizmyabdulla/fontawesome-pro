@@ -25,7 +25,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
   <br>
 
   ```html
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/all.css"/>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css"/>
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-solid.css"/>
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-regular.css"/>
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-light.css"/>
@@ -58,7 +58,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v7.1.0 Pro 💫</summary>
+  <summary>Font Awesome v7.1.0 Pro 💫 (Deprecated)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -88,7 +88,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v7.0.0 Pro 💫</summary>
+  <summary>Font Awesome v7.0.0 Pro 💫 (Deprecated)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -131,7 +131,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 ```
       <link
         rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/fontawesome.css"
       >
 
       <link
@@ -161,7 +161,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.5.1 Pro 💫</summary>
+  <summary>Font Awesome v6.5.1 Pro 💫 (Deprecated)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -199,7 +199,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.5.0 Pro 💫</summary>
+  <summary>Font Awesome v6.5.0 Pro 💫 (Deprecated)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -237,7 +237,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.4.2 Pro 💫</summary>
+  <summary>Font Awesome v6.4.2 Pro 💫 (Deprecated)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -275,7 +275,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.4.0 Pro 💫</summary>
+  <summary>Font Awesome v6.4.0 Pro 💫 (Deprecated)</summary>
   
   <br>
  Simply add the following CSS links to the <head> section of your HTML file:
@@ -321,7 +321,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 ```
     <link
       rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css"
+      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
     />
     <link
       rel="stylesheet"
