@@ -48,7 +48,7 @@ const VERSION_CONFIG = {
   },
   "7.2.0": {
     dataVersionKey: "7.2.0",
-    cssBaseUrl: "https://site-assets.fontawesome.com/releases/v7.2.0/css/",
+    cssBaseUrl: "https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/",
     availableStyles: ["solid", "regular", "light", "sharp", "duotone", "chisel", "etch", "jelly", "notdog", "slab", "thumbprint", "whiteboard", "utility", "graphite", "brands"]
   },
   "6.7.2": {
@@ -68,7 +68,7 @@ const VERSION_CONFIG = {
   },
   "brands": {
     dataVersionKey: "brands",
-    cssBaseUrl: "https://site-assets.fontawesome.com/releases/v7.2.0/css/",
+    cssBaseUrl: "https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/",
     availableStyles: ["brands"]
   }
 };
