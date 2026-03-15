@@ -1,0 +1,6 @@
+/*!
+ * Font Awesome Pro 7.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2026 Fonticons, Inc.
+ */
+:host,:root{--fa-family-notdog:"Font Awesome 7 Notdog";--fa-font-notdog-solid:normal 900 1em/1 var(--fa-family-notdog);--fa-style-family-notdog:var(--fa-family-notdog)}@font-face{font-family:"Font Awesome 7 Notdog";font-style:normal;font-weight:900;font-display:block;src:url(../webfonts/fa-notdog-solid-900.woff2)}.fans{--fa-style:900}.fa-notdog,.fans{--fa-family:var(--fa-family-notdog)}.fa-solid{--fa-style:900}

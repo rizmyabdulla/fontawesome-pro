@@ -1,0 +1,6 @@
+/*!
+ * Font Awesome Pro 7.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2026 Fonticons, Inc.
+ */
+:host,:root{--fa-family-slab-press:"Font Awesome 7 Slab Press";--fa-font-slab-press-regular:normal 400 1em/1 var(--fa-family-slab-press);--fa-style-family-slab-press:var(--fa-family-slab-press)}@font-face{font-family:"Font Awesome 7 Slab Press";font-style:normal;font-weight:400;font-display:block;src:url(../webfonts/fa-slab-press-regular-400.woff2)}.faslpr{--fa-style:400}.fa-slab-press,.faslpr{--fa-family:var(--fa-family-slab-press)}.fa-regular{--fa-style:400}

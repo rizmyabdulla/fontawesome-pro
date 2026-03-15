@@ -1,0 +1,6 @@
+/*!
+ * Font Awesome Pro 7.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2026 Fonticons, Inc.
+ */
+:host,:root{--fa-family-utility:"Font Awesome 7 Utility";--fa-font-utility-semibold:normal 600 1em/1 var(--fa-family-utility);--fa-style-family-utility:var(--fa-family-utility)}@font-face{font-family:"Font Awesome 7 Utility";font-style:normal;font-weight:600;font-display:block;src:url(../webfonts/fa-utility-semibold-600.woff2)}.fausb{--fa-style:600}.fa-utility,.fausb{--fa-family:var(--fa-family-utility)}.fa-semibold{--fa-style:600}
