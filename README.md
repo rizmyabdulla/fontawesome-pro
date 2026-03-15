@@ -1,4 +1,8 @@
 # Font Awesome Pro: Get Premium Icons for Free!
+
+> [!IMPORTANT]
+> Font Awesome has restricted this method of accessing their paid icons. I have self-hosted the files and updated the CDN to version 7.2.0 (Other versions will be updated soon) . Please check and update your CDN links accordingly.
+
 ## 🌐 Check out the icon library here: [free-icons.xyz](https://free-icons.xyz/)
 
 <img src="https://img.fortawesome.com/1ce05b4b/open-graph-general.png"/>
@@ -25,40 +29,40 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
   <br>
 
   ```html
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css"/>
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-solid.css"/>
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-regular.css"/>
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-light.css"/>
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/duotone.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/fontawesome.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-solid.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-regular.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-light.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/duotone.css"/>
 
 <!-- Additional Fontawesome Pro+ Icons for v7.2.0 -->
 
- <!-- Sharp Duotone -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-duotone-solid.css"/>
- <!-- Chisel -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/chisel-regular.css"/>
- <!-- Etch -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/etch-solid.css"/>
- <!-- Graphite -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/graphite-thin.css"/>
- <!-- Jelly -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/jelly-regular.css"/>
- <!-- Notdog -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/notdog-solid.css"/>
- <!-- Slab -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/slab-regular.css"/>
- <!-- Thumb Print -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/thumbprint-light.css"/>
- <!-- Utility -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-semibold.css"/>
- <!-- Whiteboard -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/whiteboard-semibold.css"/>
+<!-- Sharp Duotone -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-duotone-solid.css"/>
+<!-- Chisel -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/chisel-regular.css"/>
+<!-- Etch -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/etch-solid.css"/>
+<!-- Graphite -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/graphite-thin.css"/>
+<!-- Jelly -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/jelly-regular.css"/>
+<!-- Notdog -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/notdog-solid.css"/>
+<!-- Slab -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/slab-regular.css"/>
+<!-- Thumb Print -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/thumbprint-light.css"/>
+<!-- Utility -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/utility-semibold.css"/>
+<!-- Whiteboard -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/whiteboard-semibold.css"/>
   ```
 
 </details>
 
 <details>
-  <summary>Font Awesome v7.1.0 Pro 💫 (Deprecated)</summary>
+  <summary>Font Awesome v7.1.0 Pro 💫 (Not working)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -88,7 +92,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v7.0.0 Pro 💫 (Deprecated)</summary>
+  <summary>Font Awesome v7.0.0 Pro 💫 (Not Working)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -123,7 +127,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.7.2 Pro 💫</summary>
+  <summary>Font Awesome v6.7.2 Pro 💫 (Not working. Update coming soon!)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -161,7 +165,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.5.1 Pro 💫 (Deprecated)</summary>
+  <summary>Font Awesome v6.5.1 Pro 💫 (Not working)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -199,7 +203,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.5.0 Pro 💫 (Deprecated)</summary>
+  <summary>Font Awesome v6.5.0 Pro 💫 (Not working)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -237,7 +241,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.4.2 Pro 💫 (Deprecated)</summary>
+  <summary>Font Awesome v6.4.2 Pro 💫 (Not working)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
@@ -275,7 +279,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v6.4.0 Pro 💫 (Deprecated)</summary>
+  <summary>Font Awesome v6.4.0 Pro 💫 (Not working)</summary>
   
   <br>
  Simply add the following CSS links to the <head> section of your HTML file:
@@ -313,7 +317,7 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 </details>
 
 <details>
-  <summary>Font Awesome v5.15.4 Pro 💫</summary>
+  <summary>Font Awesome v5.15.4 Pro 💫 (Not working. Update coming soon!)</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
