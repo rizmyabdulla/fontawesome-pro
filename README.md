@@ -28,310 +28,180 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 
   <br>
 
-  ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/fontawesome.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-solid.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-regular.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-light.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/duotone.css"/>
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/fontawesome.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-solid.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-regular.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-light.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/duotone.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/solid.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/regular.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/light.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/brands.css"
+/>
 
 <!-- Additional Fontawesome Pro+ Icons for v7.2.0 -->
 
 <!-- Sharp Duotone -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-duotone-solid.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/sharp-duotone-solid.css"
+/>
 <!-- Chisel -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/chisel-regular.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/chisel-regular.css"
+/>
 <!-- Etch -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/etch-solid.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/etch-solid.css"
+/>
 <!-- Graphite -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/graphite-thin.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/graphite-thin.css"
+/>
 <!-- Jelly -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/jelly-regular.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/jelly-regular.css"
+/>
 <!-- Notdog -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/notdog-solid.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/notdog-solid.css"
+/>
 <!-- Slab -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/slab-regular.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/slab-regular.css"
+/>
 <!-- Thumb Print -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/thumbprint-light.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/thumbprint-light.css"
+/>
 <!-- Utility -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/utility-semibold.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/utility-semibold.css"
+/>
 <!-- Whiteboard -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/whiteboard-semibold.css"/>
-  ```
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/whiteboard-semibold.css"
+/>
+```
 
 </details>
 
 <details>
-  <summary>Font Awesome v7.1.0 Pro 💫 (Not working)</summary>
+  <summary>Font Awesome v6.7.2 Pro 💫</summary>
   
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
 
-```
+```html
 <link
   rel="stylesheet"
-  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/fontawesome.css"
 />
 <link
   rel="stylesheet"
-  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/sharp-solid.css"
 />
 <link
   rel="stylesheet"
-  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/sharp-regular.css"
 />
 <link
   rel="stylesheet"
-  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/sharp-light.css"
 />
 <link
   rel="stylesheet"
-  href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/duotone.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/brands.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/solid.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/regular.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v6.7.2/css/light.css"
 />
 ```
+
 </details>
 
 <details>
-  <summary>Font Awesome v7.0.0 Pro 💫 (Not Working)</summary>
+  <summary>Font Awesome v5.15.4 Pro 💫</summary>
   
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/solid.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/regular.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/light.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/brands.css"
+/>
   <br>
   Simply add the following CSS links to the <head> section of your HTML file:
 
-```
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-solid.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-regular.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v7.0.0/css/sharp-light.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v7.0.0/css/duotone.css"
-    />
-```
-  
-</details>
-
-<details>
-  <summary>Font Awesome v6.7.2 Pro 💫 (Not working. Update coming soon!)</summary>
-  
-  <br>
-  Simply add the following CSS links to the <head> section of your HTML file:
-
-```
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/fontawesome.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
-      >
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css"
-      />
-```
-  
-</details>
-
-<details>
-  <summary>Font Awesome v6.5.1 Pro 💫 (Not working)</summary>
-  
-  <br>
-  Simply add the following CSS links to the <head> section of your HTML file:
-
-```
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
-      >
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"
-      />
-```
-  
-</details>
-
-<details>
-  <summary>Font Awesome v6.5.0 Pro 💫 (Not working)</summary>
-  
-  <br>
-  Simply add the following CSS links to the <head> section of your HTML file:
-
-```
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-solid.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-regular.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-light.css"
-      >
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/duotone.css"
-      />
-       <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.5.0/css/brands.css"
-      />
-```
-  
-</details>
-
-<details>
-  <summary>Font Awesome v6.4.2 Pro 💫 (Not working)</summary>
-  
-  <br>
-  Simply add the following CSS links to the <head> section of your HTML file:
-
-```
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
-      >
-
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
-      >
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/duotone.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/brands.css"
-      />
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/fontawesome.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/duotone.css"
+/>
 ```
 
-</details>
-
-<details>
-  <summary>Font Awesome v6.4.0 Pro 💫 (Not working)</summary>
-  
-  <br>
- Simply add the following CSS links to the <head> section of your HTML file:
-
-```
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/duotone.css"
-    />
-    <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/brands.css"
-    />
-```
-</details>
-
-<details>
-  <summary>Font Awesome v5.15.4 Pro 💫 (Not working. Update coming soon!)</summary>
-  
-  <br>
-  Simply add the following CSS links to the <head> section of your HTML file:
-
-```
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/duotone.css"
-      />
-```
 </details>
 
 ### Star this Repository 🌟
