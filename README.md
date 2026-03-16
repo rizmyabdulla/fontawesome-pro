@@ -1,7 +1,7 @@
 # Font Awesome Pro: Get Premium Icons for Free!
 
 > [!IMPORTANT]
-> Font Awesome has restricted this method of accessing their paid icons. I have self-hosted the files and updated the CDN to version 7.2.0 (Other versions will be updated soon) . Please check and update your CDN links accordingly.
+> Font Awesome has restricted this method of accessing their paid icons. I have self-hosted the files and updated the CDNs. Please check and update your CDN links accordingly.
 
 ## 🌐 Check out the icon library here: [free-icons.xyz](https://free-icons.xyz/)
 
@@ -172,6 +172,14 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 <details>
   <summary>Font Awesome v5.15.4 Pro 💫</summary>
   
+  <br>
+  Simply add the following CSS links to the <head> section of your HTML file:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/fontawesome.css"
+/>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/solid.css"
@@ -187,14 +195,6 @@ Reminder: If you can afford the Font Awesome Pro plan, kindly show your support 
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/brands.css"
-/>
-  <br>
-  Simply add the following CSS links to the <head> section of your HTML file:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v5.15.4/css/fontawesome.css"
 />
 <link
   rel="stylesheet"
